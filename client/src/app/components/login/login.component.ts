@@ -55,6 +55,7 @@ export class LoginComponent implements OnInit {
       password: this.form.get('password').value // Password input field
     };
 
+
     // Function to send login data to API
     this.authService.login(user).subscribe(data => {
       // Check if response was a success or error
