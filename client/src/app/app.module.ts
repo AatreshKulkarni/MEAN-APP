@@ -23,6 +23,7 @@ import { NotAuthGuard } from './guards/notAuth.guard';
 import { BlogComponent } from './components/blog/blog.component';
 import { EditBlogComponent } from './components/blog/edit-blog/edit-blog.component';
 import { DeleteBlogComponent } from './components/blog/delete-blog/delete-blog.component';
+import { PublicProfileComponent } from './components/public-profile/public-profile.component';
 
 export function tokenGetter() {
   return localStorage.getItem('access_token');
@@ -39,7 +40,8 @@ export function tokenGetter() {
     ProfileComponent,
     BlogComponent,
     EditBlogComponent,
-    DeleteBlogComponent
+    DeleteBlogComponent,
+    PublicProfileComponent
   ],
   imports: [
     BrowserModule,
